@@ -1,4 +1,4 @@
-<img width="386" height="299" alt="Screenshot 2026-08-31 224909" src="https://github.com/user-attachments/assets/186477f1-a696-4b94-87d5-73f7d912a1b5" />
+
 # Media Player
 
 A desktop music player application developed with **C# and Windows Forms**. The application allows users to load multiple audio files, manage them through a playlist, and control their playback using a graphical interface.
