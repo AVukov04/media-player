@@ -22,7 +22,7 @@ The project was developed to practice **C# programming, object-oriented programm
 
 ### Main Interface
 
-![Media Player Main Interface](Screenshot_2026-08-31_224909.png)
+![Media Player Main Interface](./images/Screenshot_2026-08-31_224909.png)
 
 ## Technologies
 
