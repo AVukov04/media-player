@@ -1,40 +1,41 @@
-﻿# Media Player
+# Media Player
 
-A desktop music player application developed with **C# and Windows Forms**. The project allows users to load and manage multiple audio files and control their playback through a simple graphical interface.
+A desktop music player application developed with **C# and Windows Forms**. The application allows users to load multiple audio files, manage them through a playlist, and control their playback using a graphical interface.
 
-The project was created to practice **C# programming, object-oriented programming, event-driven programming, and Windows Forms development**.
-
-    images/
-    Screenshot 2026-08-31 224909.png
+The project was developed to practice **C# programming, object-oriented programming, event-driven programming, and Windows Forms development**.
 
 ## Features
 
-* Open and load multiple audio files
-* Display loaded tracks in a playlist
-* Play, pause, and stop audio
-* Navigate to the next or previous track
-* Restart the current track
-* Volume control
-* Playback progress bar
-* Display the current playback time
-* Switch between elapsed time and total track duration
-* Graphical user interface built with Windows Forms
+- Open and load multiple audio files
+- Display loaded tracks in a playlist
+- Play, pause, and stop audio
+- Switch between tracks
+- Previous and next track controls
+- Restart the current track
+- Volume control
+- Playback progress bar
+- Display the current playback time
+- Display track duration
+- Graphical user interface built with Windows Forms
+
+## Screenshots
+
+### Main Interface
+
+![Media Player Main Interface](images/Screenshot_2026-08-31_224909.png)
 
 ## Technologies
 
-* **C#**
-* **.NET Framework 4.8**
-* **Windows Forms**
-* **Windows Media Player / WMPLib**
-* **Object-Oriented Programming**
-
-## Project Structure
-
+- **C#**
+- **.NET Framework 4.8**
+- **Windows Forms**
+- **Windows Media Player / WMPLib**
+- **Object-Oriented Programming**
 
 
 ## Object-Oriented Programming
 
-The project includes basic OOP concepts through the `Track` class and `IPlayable` interface.
+The project uses basic object-oriented programming concepts through the `Track` class and the `IPlayable` interface.
 
 ### IPlayable
 
@@ -51,48 +52,46 @@ public interface IPlayable
 
 ### Track
 
-The `Track` class represents an individual audio track and contains:
+The `Track` class represents an individual audio track and stores information such as:
 
-* Track name
-* File path
-* Duration
+- Track name
+- File path
+- Track information
 
-It implements the `IPlayable` interface and demonstrates the use of classes, properties, constructors, and interfaces.
+The class implements the `IPlayable` interface and demonstrates the use of classes, properties, constructors, and interfaces.
 
 ## How It Works
 
-When the user selects **Open**, a file dialog allows multiple audio files to be selected.
+The user can select multiple audio files through the **Open** button.
 
-The application stores:
+The selected files are added to the playlist and can then be selected for playback.
 
-* The file names for displaying in the playlist
-* The file paths for accessing the actual audio files
-* `Track` objects representing the loaded tracks
+The application uses Windows Media Player through `WMPLib` to handle audio playback.
 
-Selecting a track loads its file into Windows Media Player and starts playback.
+The Windows Forms interface responds to user interactions such as:
 
-The application uses Windows Forms event handlers to respond to user actions such as:
+- Button clicks
+- Playlist selection
+- Volume changes
+- Track changes
+- Timer updates
 
-* Button clicks
-* Playlist selection
-* Volume changes
-* Timer updates
-
-A timer periodically updates the playback progress and displayed track time.
+A timer is used to update the playback progress and display the current track time.
 
 ## Playback Controls
 
-| Control      | Function                            |
-| ------------ | ----------------------------------- |
-| Play         | Starts playback                     |
-| Pause        | Pauses the current track            |
-| Stop         | Stops playback                      |
-| Next         | Moves to the next track             |
-| Previous     | Moves to the previous track         |
-| Volume       | Changes playback volume             |
-| Progress Bar | Shows the current playback position |
-| Track Time   | Displays playback time / duration   |
-| Open         | Adds audio files to the playlist    |
+| Control | Function |
+|---|---|
+| Open | Adds audio files to the playlist |
+| Play | Starts playback |
+| Pause | Pauses the current track |
+| Stop | Stops playback |
+| Previous | Moves to the previous track |
+| Next | Moves to the next track |
+| Restart | Restarts the current track |
+| Volume | Controls the playback volume |
+| Progress Bar | Displays the current playback position |
+| Track Time | Displays playback time and duration |
 
 ## Purpose
 
@@ -100,25 +99,29 @@ This project was developed as a practical exercise in **C# and desktop applicati
 
 The main goals were to practice:
 
-* C# syntax and programming fundamentals
-* Classes and objects
-* Interfaces
-* Encapsulation
-* Collections
-* Event handling
-* GUI development
-* Working with external components through `WMPLib`
+- C# programming fundamentals
+- Object-oriented programming
+- Classes and objects
+- Interfaces
+- Encapsulation
+- Collections
+- Event handling
+- Windows Forms
+- Working with external components through `WMPLib`
 
 ## Future Improvements
 
 Possible improvements include:
 
-* Removing duplicate playlist data structures
-* Connecting the `Track` objects directly to the playback logic
-* Adding automatic track duration detection
-* Adding a proper playlist management system
-* Allowing tracks to be removed from the playlist
-* Adding shuffle and repeat modes
-* Adding album artwork and track metadata
-* Improving the separation between the user interface and application logic
-* Adding error handling for unsupported or missing audio files
+- Improved playlist management
+- Removing tracks from the playlist
+- Shuffle and repeat modes
+- Automatic track duration handling
+- Displaying album artwork and track metadata
+- Improved error handling for missing or unsupported files
+- Better separation between the user interface and application logic
+- More advanced media controls
+
+## License
+
+This project was created as a learning and portfolio project.
